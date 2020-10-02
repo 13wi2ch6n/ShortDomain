@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Page Redirection</title>
+        <meta property="og:site_name" content="6uo Network">
+        <meta property="og:title" content="標題 - 6uo 轉網址">
+        <meta property="og:description" content="資訊攔">
+        <meta property="og:image" content="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:700&display=swap&subset=chinese-traditional">
+        <link rel="canonical" href="http://6uo.cc/unknown">
+        <style>
+h1 {
+  color: white; text-align: center
+}
+</style>
+    </head>
+    <body style="background-color:Black;">
+        <h1><a id="time"></a></h1>
+        <script type="text/javascript">
+            var t = 4;
+            function showTime() {
+
+                t -= 1;
+                document.getElementById("time").innerHTML = '將會在 ' + t + ' 秒後轉去至未知頁面';
+
+                if(t == 0) {
+                    location.href = "http://6uo.cc/unknown";
+                    document.getElementById("time").innerHTML = '如果您沒有自動重新導向, 請點擊此<a href= + link + >鏈結</a>';
+                    return false;
+                }
+
+                setTimeout("showTime()",1000);
+            }
+
+            showTime();
+        </script>
+        <style>
+		.texts {
+			font-family: 'Noto Sans TC', sans-serif;
+			font-size: 25px;
+		}
+	</style>
+    </body>
+</html>
