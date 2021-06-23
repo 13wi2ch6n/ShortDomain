@@ -1,0 +1,12 @@
+body {
+  background-color:Black;
+}
+
+h1 {
+  color: white; text-align: center
+}
+
+.texts {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 25px;
+}
